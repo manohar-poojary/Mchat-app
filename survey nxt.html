@@ -1,0 +1,75 @@
+<html>
+<head>
+<style>
+*{
+margin:0;
+padding:0;
+}
+input[type="text\ area"] {
+    width: 470px;
+    height: 218px;
+position:relative;
+right:-24px;
+}
+.got {
+    padding: 33px;
+    position: relative;
+    right: 11px;
+}
+.back a {
+    color: white;
+    text-decoration: none;
+}
+.back {
+    padding: 150px;
+}
+button {
+    background: blue;
+    width: 83px;
+    height: 34px;
+    border: 0 solid;
+}
+.back a:hover{
+    color: black;
+}
+
+
+body{
+background:#00000024;
+}
+main{
+background:white;
+height:569px;
+width:578px;
+position: relative;
+    left: 297px;
+    top: 34px;
+}
+div {
+    position: relative;
+    right: -35px
+}
+.next a {
+    text-decoration: none;
+}
+</style>
+</head>
+<body>
+<main>
+<div>Tell me about yourself?</div>
+<textarea></textarea>
+<div class="got">
+How much rating are you willing to give us?
+<span><input type="checkbox" id="star" name="rate">
+<input type="checkbox" id="star" name="rate">
+<input type="checkbox" id="star" name="rate">
+<input type="checkbox" id="star" name="rate">
+<input type="checkbox" id="star" name="rate">
+</span><br>
+<div class="back">
+<button><a href="/">{{Back}}</a></button>
+<button><a href="/thanks">Submit</a></button>
+</div></main>
+
+</body>
+</html>

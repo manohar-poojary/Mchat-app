@@ -1,0 +1,152 @@
+<html>
+<head>
+<style>
+*{
+margin:0;
+padding:0;
+}
+body{
+background:#00000024;
+}
+main{
+background:white;
+height:569px;
+width:578px;
+position: relative;
+    left: 297px;
+    top: 34px;
+}
+h1{
+    position: relative;
+    right: -198px;
+color:rgba(0, 0, 255, 0.842);
+}
+sup{
+color:red;
+}
+section{
+    position: relative;
+    right: -49px;
+}
+form{
+padding:15px;
+display:flex; 
+}
+.frst{
+position:relative;
+left:-25px;
+}
+.frst1{
+position:relative;
+left:109px;
+}
+.college{
+padding: 24px;
+    position: relative;
+    left: -37;
+
+}
+.college input{
+width:341px;
+}
+.next a {
+    text-decoration: none;
+}
+.next{
+position: relative;
+    right: -231px;
+    bottom: -191px;
+}
+.next button{
+width: 75px;
+    height: 34px;
+    background: #0000ffcc;
+    border: 0px solid #4b00ff;
+}
+.next p{
+color:white;
+text-decoration:none;
+}
+.next p:hover{
+color:black;
+}
+span{
+position:relative;
+right:13px; 
+}
+.mass {
+    position: relative;
+    bottom: -19px;
+}.boss {
+    position: relative;
+    bottom: -47px;
+    right: 18px;
+}
+@media screen and (max-width:441px) {
+    body{
+        background-color: blue;
+    }
+}
+</style>
+</head>
+<body>
+<main>
+<h1><font face="roman new times">SURVEY!</h1><br>
+<section>
+<form>
+<div class="frst">
+First name<sup>*</sup><br>
+<input type="text">
+</div>
+<div class="frst1">
+Lastname<sup>*</sup><br>
+<input type="text">
+</div></form>
+<div class="college">College: <br><input type="text"></div>
+<span> Date of bith: <input type="text">
+</span><br>
+<span class="mass">
+Select your stream: 
+<select>
+<option value="s">science</option>
+<option value="c">commerce</option>
+<option value="a">arts</option>
+</select></span><br>
+<div class="boss"> are you involved in criminal activity? 
+    <input type="radio"  value="n" name="bvc"id="super" onclick="check()">no
+<input type="radio" id="big" name="bvc" value="you are not eligible !" onclick="colors()">yes
+</div></section>
+<div class="next">
+<button id="chinna" onclick="clicked"><a href="/survey"><p>Next</p></a></button>
+</div></main>
+<script>
+    // alert("Be careful while filling your name");
+    // document.getElementById("not").onclick=function(){
+    //     alert("you are not eligible for this");
+    // }
+    // var a=document.getElementById("not");
+// if(a==document.getElementById("not").onclick){
+//     console.log("hrllo manu...");
+// }
+function check(){
+    document.querySelector(".boss").style.color="green";
+    document.querySelector(".next").innerHTML='<button><a href="/survey"><p>Next</p></a></button>';
+}
+function colors(){
+    document.querySelector(".boss").style.color="red";
+    alert("you are not eligible...");
+    document.querySelector(".next").innerHTML="";
+}
+// document.getElementById("big").onclick=function(){
+//     var a= document.getElementById("big").value;
+//     document.getElementById("chinna").innerHTML=a;
+
+// }
+
+</script>
+</body>
+</html>
+
+
+</body>
+</html>
